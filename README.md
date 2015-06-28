@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-imkayac/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-imkayac)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-imkayac/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-imkayac)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-imkayac.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-imkayac)
-[ ![Codeship Status for sensu-plugins/sensu-plugins-imkayac](https://codeship.com/projects/0db8ad20-edb0-0132-53ad-5a51cb58650a/status?branch=master)](https://codeship.com/projects/84060)
+[![Codeship Status for sensu-plugins/sensu-plugins-imkayac](https://codeship.com/projects/0db8ad20-edb0-0132-53ad-5a51cb58650a/status?branch=master)](https://codeship.com/projects/84060)
 
 ## Functionality
 
