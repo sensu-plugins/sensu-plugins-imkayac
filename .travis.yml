@@ -1,19 +1,33 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-imkayac.gemspec
+- gem install sensu-plugins-imkayac-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: Jruwuztd2C1ks+wvqdQP45FK4x5BddacCr79dlBGCVBlG897oeIwfr1iGmGv4JcTqBI4sN0nWPuzI3JxXGQfBmt/KRy7IiLSdYl/7gZxbqmFPcpEjv0+CyMff5vf3jiHQoJQnuhO69M5p1vzZ96FiyWo71PI3rdpKA36DhZ75Y0=
+  gem: sensu-plugins-imkayac
+  on:
+    tags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-imkayac
