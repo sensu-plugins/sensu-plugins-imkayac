@@ -13,6 +13,7 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Changed
 - Loosen `sensu-plugin` dependency to `~> 1.2` (@eheydrick)
 - Update to Rubocop `0.40` and cleanup (@eheydrick)
+- Rename `imkayac.rb` to `handler-imkayac.rb` to meet naming standards (@eheydrick)
 
 ## [0.0.2] - 2015-07-14
 ### Changed
